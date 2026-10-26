@@ -1,23 +1,201 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171320"><title>Our Love Radio</title><style>
-:root{font-family:Arial,Helvetica,sans-serif;color:#423744;background:#f4e9ef}*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:28px 12px;background:radial-gradient(ellipse at 50% 25%,#fff9fc,#f2dce8 72%,#e8cfde)}button{font:inherit;cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid #a95683;outline-offset:3px}.shell{width:min(100%,440px);min-width:0}header{text-align:center;margin-bottom:20px}header small{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a36b88}h1{font-family:Georgia,serif;font-weight:400;font-size:32px;margin:8px 0;color:#76516a}header p{font-size:12px;color:#a47790}.radio{position:relative;margin:auto;width:min(100%,360px);padding:24px 24px 27px;border-radius:38px;background:linear-gradient(135deg,#fff,#f7f1f4 55%,#e6dce3);border:2px solid #fff;box-shadow:0 25px 50px #7454693b,inset 0 -5px 8px #9b87901f,inset 0 3px 4px white}.top{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.12em;color:#a37b91;margin:0 4px 12px}.light{display:inline-block;width:6px;height:6px;background:#ee98ba;border-radius:50%;margin-right:5px}.face{display:block}.display{min-height:195px;overflow:hidden;border-radius:9px;border:5px solid #d6cbd2;background:linear-gradient(155deg,#f6f4eb,#d6dfd4);box-shadow:inset 0 2px 8px #3d4e4055,0 2px 3px white;padding:14px 15px;display:flex;flex-direction:column;justify-content:space-between}.freq{font-size:10px;letter-spacing:.14em;color:#52675b;font-weight:bold}.station{font-weight:bold;font-size:clamp(17px,5.5vw,24px);overflow-wrap:anywhere;letter-spacing:-.7px;margin:9px 0 4px;color:#34483d}.desc{font-size:11px;line-height:1.4;color:#617064}.bars{display:flex;align-items:end;height:22px;gap:3px}.bars i{display:block;width:4px;height:20%;background:#6c8973}.playing .bars i{animation:beat .7s ease-in-out infinite alternate}.bars i:nth-child(3n){animation-delay:-.2s}.bars i:nth-child(4n){animation-delay:-.4s}@keyframes beat{to{height:90%}}.speaker{display:none}.song{text-align:center;margin:14px 0 5px;min-height:43px}.song strong{font-size:12px;color:#66475d}.song p{font-size:10px;color:#a27690;margin:5px 0}.controls{position:relative;width:min(214px,100%);aspect-ratio:1;height:auto;margin:16px auto 17px;border-radius:50%;background:linear-gradient(140deg,#e8b6cf,#f6dbe8);box-shadow:inset 0 3px 8px #8b5d7540,0 2px 2px white;display:flex;align-items:center;justify-content:center;gap:0}.control{position:absolute;border:0;background:transparent;color:#956b85;font-size:31px;width:54px;height:54px;display:grid;place-items:center}.control#prev{left:3%;top:50%;transform:translateY(-50%)}.control#next{right:3%;top:50%;transform:translateY(-50%)}.control.main{width:88px;height:88px;border-radius:50%;background:linear-gradient(145deg,#fff,#eae1e7);box-shadow:0 2px 7px #815e7455,inset 0 1px 2px white;left:50%;top:50%;transform:translate(-50%,-50%);font-size:24px;color:#b46b95}.wheel-label{position:absolute;top:20px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.12em;color:#94677f;font-weight:bold;pointer-events:none}.wheel-bottom{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-size:22px;color:#94677f;pointer-events:none}.seek{display:block;width:100%;accent-color:#bc789f;height:5px;cursor:pointer}.times{display:flex;justify-content:space-between;color:#a47b92;font-size:10px;margin-top:8px}.stations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:20px}.preset{min-width:0;overflow-wrap:anywhere;border:1px solid #dec4d3;background:#fff9fc;border-radius:9px;color:#805e73;font-size:11px;padding:9px 4px}.preset span{display:block;color:#ad8ba0;font-size:9px;margin-bottom:3px}.preset.active{background:#d99ebc;color:#fff;border-color:#d99ebc}.preset.active span{color:#fff5fa}.hint{font-size:10px;color:#a06383;min-height:16px;text-align:center;margin-top:12px}.foot{text-align:center;color:#a57892;font-size:11px;line-height:1.7;margin-top:17px}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
-@media(max-width:360px){body{padding:14px 8px}.radio{padding:17px 15px 20px;border-radius:28px}.display{padding:11px}.controls{width:min(190px,100%)}.control{font-size:24px;width:44px;height:44px}.control.main{width:76px;height:76px}.preset{font-size:10px;padding:9px 3px}h1{font-size:27px}}@media(max-height:650px) and (min-width:500px){body{display:block}.shell{margin:auto}}</style></head><body><main class="shell"><header><small>Happy Two Month Anniversary babyyyy</small><h1>OUR LOVE RADIO</h1><p>I LOVE YOUUU, TO THE MOOON AND BACKKKKK</p></header><section class="radio" id="radio"><div class="top"><div><span class="light"></span>MWUAHHHHHHHH</div><div>POUR MON AMOUR</div></div><div class="face"><div class="display"><div><div class="freq" id="frequency">101.1 FM</div><div class="station" id="station">Miss Me FM</div><div class="desc" id="description">WIFEYYYYY hehehehe</div></div><div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="speaker" aria-label="Radio speaker decoration"></div></div><div class="song"><strong id="track">Choose a station</strong><p id="dedication">Press play</p></div><div class="controls"><span class="wheel-label">MENU</span><span class="wheel-bottom">⌄</span><button class="control" id="prev" aria-label="Previous song">◀◀</button><button class="control main" id="play" aria-label="Play">▶</button><button class="control" id="next" aria-label="Next song">▶▶</button></div><input class="seek" id="seek" type="range" min="0" max="1000" value="0" aria-label="Song progress"><div class="times"><span id="elapsed">0:00</span><span id="duration">0:00</span></div><div class="stations" id="presets"></div><div class="hint" id="status" role="status" aria-live="polite"></div></section><div class="foot">A frequency that belongs to us. ♡<br>Made with love, not distance.</div></main><audio id="audio" preload="none"></audio><script>
-/* EDIT YOUR SONGS HERE. Put your MP3s in a folder named music beside index.html.
-   File names are examples: change each file/title/message to match your actual songs.
-   Only host recordings and music you have permission to share. */
-const stations=[
- {name:'Miss Me FM',frequency:'101.1 FM',description:'For the moments when 9447 km feel farther than it is',songs:[{title:'Hey There Delilah',file:'miss-me-1.mp3',message:'Don't worry about the distance baby'},{title:'Hold On',file:'miss-me-2.mp3',message:'There isnt a life for me, without you in it'},{title:'If the World was Ending',file:'miss-me-3.mp3',message:'Even when things go wrong, Ill stay'}]},
- {name:'Sleepy FM',frequency:'102.2 FM',description:'A soft corner for you to rest',songs:[{title:'Sailor Song',file:'sleepy-1.mp3',message:'Close your eyes and listen, bebeee'}]},
- {name:'Happy FM',frequency:'103.3 FM',description:'For the happy days where u feel good',songs:[{title:'Arz Kiya Hai',file:'happy-1.mp3',message:'Tu he meri jaan'},{title:'Let me Love you',file:'happy-2.mp3',message:'Let me love you, even when the world is against us'}]},
- {name:'Us FM',frequency:'104.4 FM',description:'Tells our story, my love',songs:[{title:'Belong Together',file:'us-1.mp3',message:'We belong together mi amor'},{title:'If we have each other',file:'us-2.mp3',message:'We only need each other'},{title:'All of me',file:'us-3.mp3',message:'I love every part of you'}]},
- {name:'Future FM',frequency:'105.5 FM',description:'Two months down, a lifetime to go',songs:[{title:'Perfect',file:'future-1.mp3',message:'You are truly perfect in my eyes'},{title:'Rewrite the Stars',file:'future-2.mp3',message:'I would do anything for you'},{title:'Until I Found You',file:'future-3.mp3',message:'You are the love of my life'}]},
- {name:'Special FM',frequency:'143.2 FM',description:'A special message, just for you',songs:[{title:'A message from me',file:'secret-message.mp3',message:'Happy two months, my love.'}]}
-];
-const $=id=>document.getElementById(id),audio=$('audio');let stationIndex=0,trackIndex=0,playToken=0;const presets=$('presets');const fmt=n=>Number.isFinite(n)?`${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`:'0:00';
-stations.forEach((s,i)=>{const b=document.createElement('button');b.className='preset';b.innerHTML=`<span>${s.frequency}</span>${s.name}`;b.onclick=()=>selectStation(i);presets.appendChild(b)});
-function sync(){const s=stations[stationIndex],t=s.songs[trackIndex];$('frequency').textContent=s.frequency;$('station').textContent=s.name;$('description').textContent=s.description;$('track').textContent=t.title;$('dedication').textContent=t.message;[...presets.children].forEach((b,i)=>{b.classList.toggle('active',i===stationIndex);b.setAttribute('aria-pressed',String(i===stationIndex))});$('seek').value=0;$('elapsed').textContent='0:00';$('duration').textContent='0:00';$('status').textContent='';++playToken;audio.pause();audio.src=t.file;audio.load();setPlaying(false)}
-function setPlaying(v){$('radio').classList.toggle('playing',v);$('play').textContent=v?'Ⅱ':'▶';$('play').setAttribute('aria-label',v?'Pause':'Play')}
-async function play(){const token=playToken;try{await audio.play();if(token===playToken)$('status').textContent=''}catch(e){if(token===playToken){setPlaying(false);$('status').textContent='Could not play this file. Check its name and location.'}}}
-function selectStation(i){stationIndex=i;trackIndex=0;sync();play()}
-function changeTrack(n){trackIndex=(trackIndex+n+stations[stationIndex].songs.length)%stations[stationIndex].songs.length;sync();play()}
-$('play').onclick=()=>audio.paused?play():audio.pause();$('prev').onclick=()=>{if(audio.currentTime>3){audio.currentTime=0}else changeTrack(-1)};$('next').onclick=()=>changeTrack(1);audio.onplay=()=>setPlaying(true);audio.onpause=()=>setPlaying(false);audio.onended=()=>{if(stations[stationIndex].songs.length>1)changeTrack(1);else{audio.currentTime=0;setPlaying(false)}};audio.onerror=()=>{if(audio.getAttribute('src'))$('status').textContent='Audio not found. Add the matching MP3 to your music folder.'};audio.ontimeupdate=()=>{if(Number.isFinite(audio.duration)&&audio.duration>0){$('seek').value=Math.round(audio.currentTime/audio.duration*1000);$('elapsed').textContent=fmt(audio.currentTime);$('duration').textContent=fmt(audio.duration)}};audio.onloadedmetadata=()=>{$('duration').textContent=fmt(audio.duration)};$('seek').oninput=e=>{if(Number.isFinite(audio.duration)&&audio.duration>0)audio.currentTime=e.target.value/1000*audio.duration};sync();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171320">
+  <title>Our Love Radio</title>
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;color:#423744;background:#f4e9ef}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100svh;display:grid;place-items:center;padding:28px 12px;background:radial-gradient(ellipse at 50% 25%,#fff9fc,#f2dce8 72%,#e8cfde)}
+    button{font:inherit;cursor:pointer}
+    button:focus-visible,input:focus-visible{outline:2px solid #a95683;outline-offset:3px}
+    .shell{width:min(100%,440px);min-width:0}
+    header{text-align:center;margin-bottom:20px}
+    header small{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a36b88}
+    h1{font-family:Georgia,serif;font-weight:400;font-size:32px;margin:8px 0;color:#76516a}
+    header p{font-size:12px;color:#a47790}
+    .radio{position:relative;margin:auto;width:min(100%,360px);padding:24px 24px 27px;border-radius:38px;background:linear-gradient(135deg,#fff,#f7f1f4 55%,#e6dce3);border:2px solid #fff;box-shadow:0 25px 50px #7454693b,inset 0 -5px 8px #9b87901f,inset 0 3px 4px white}
+    .top{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.12em;color:#a37b91;margin:0 4px 12px}
+    .light{display:inline-block;width:6px;height:6px;background:#ee98ba;border-radius:50%;margin-right:5px}
+    .display{min-height:195px;overflow:hidden;border-radius:9px;border:5px solid #d6cbd2;background:linear-gradient(155deg,#f6f4eb,#d6dfd4);box-shadow:inset 0 2px 8px #3d4e4055,0 2px 3px white;padding:14px 15px;display:flex;flex-direction:column;justify-content:space-between}
+    .freq{font-size:10px;letter-spacing:.14em;color:#52675b;font-weight:bold}
+    .station{font-weight:bold;font-size:clamp(17px,5.5vw,24px);overflow-wrap:anywhere;letter-spacing:-.7px;margin:9px 0 4px;color:#34483d}
+    .desc{font-size:11px;line-height:1.4;color:#617064}
+    .bars{display:flex;align-items:end;height:22px;gap:3px}
+    .bars i{display:block;width:4px;height:20%;background:#6c8973}
+    .playing .bars i{animation:beat .7s ease-in-out infinite alternate}
+    .bars i:nth-child(3n){animation-delay:-.2s}
+    .bars i:nth-child(4n){animation-delay:-.4s}
+    @keyframes beat{to{height:90%}}
+    .song{text-align:center;margin:14px 0 5px;min-height:43px}
+    .song strong{font-size:12px;color:#66475d}
+    .song p{font-size:10px;color:#a27690;margin:5px 0}
+    .controls{position:relative;width:min(214px,100%);aspect-ratio:1;margin:16px auto 17px;border-radius:50%;background:linear-gradient(140deg,#e8b6cf,#f6dbe8);box-shadow:inset 0 3px 8px #8b5d7540,0 2px 2px white;display:flex;align-items:center;justify-content:center}
+    .control{position:absolute;border:0;background:transparent;color:#956b85;font-size:31px;width:54px;height:54px;display:grid;place-items:center}
+    .control#prev{left:3%;top:50%;transform:translateY(-50%)}
+    .control#next{right:3%;top:50%;transform:translateY(-50%)}
+    .control.main{width:88px;height:88px;border-radius:50%;background:linear-gradient(145deg,#fff,#eae1e7);box-shadow:0 2px 7px #815e7455,inset 0 1px 2px white;left:50%;top:50%;transform:translate(-50%,-50%);font-size:24px;color:#b46b95}
+    .wheel-label{position:absolute;top:20px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.12em;color:#94677f;font-weight:bold;pointer-events:none}
+    .wheel-bottom{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-size:22px;color:#94677f;pointer-events:none}
+    .seek{display:block;width:100%;accent-color:#bc789f;height:5px;cursor:pointer}
+    .times{display:flex;justify-content:space-between;color:#a47b92;font-size:10px;margin-top:8px}
+    .stations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:20px}
+    .preset{min-width:0;overflow-wrap:anywhere;border:1px solid #dec4d3;background:#fff9fc;border-radius:9px;color:#805e73;font-size:11px;padding:9px 4px}
+    .preset span{display:block;color:#ad8ba0;font-size:9px;margin-bottom:3px}
+    .preset.active{background:#d99ebc;color:#fff;border-color:#d99ebc}
+    .preset.active span{color:#fff5fa}
+    .hint{font-size:10px;color:#a06383;min-height:16px;text-align:center;margin-top:12px}
+    .foot{text-align:center;color:#a57892;font-size:11px;line-height:1.7;margin-top:17px}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <small>Happy Two Month Anniversary babyyyy</small>
+      <h1>OUR LOVE RADIO</h1>
+      <p>I LOVE YOUUU, TO THE MOOON AND BACKKKKK</p>
+    </header>
+    <section class="radio" id="radio">
+      <div class="top">
+        <div><span class="light"></span>MWUAHHHHHHHH</div>
+        <div>POUR MON AMOUR</div>
+      </div>
+      <div class="face">
+        <div class="display">
+          <div>
+            <div class="freq" id="frequency">101.1 FM</div>
+            <div class="station" id="station">Miss Me FM</div>
+            <div class="desc" id="description">WIFEYYYYY hehehehe</div>
+          </div>
+          <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <div class="song">
+        <strong id="track">Choose a station</strong>
+        <p id="dedication">Press play</p>
+      </div>
+      <div class="controls">
+        <span class="wheel-label">MENU</span>
+        <span class="wheel-bottom">⌄</span>
+        <button class="control" id="prev" aria-label="Previous song">◀◀</button>
+        <button class="control main" id="play" aria-label="Play">▶</button>
+        <button class="control" id="next" aria-label="Next song">▶▶</button>
+      </div>
+      <input class="seek" id="seek" type="range" min="0" max="1000" value="0" aria-label="Song progress">
+      <div class="times"><span id="elapsed">0:00</span><span id="duration">0:00</span></div>
+      <div class="stations" id="presets"></div>
+      <div class="hint" id="status" role="status" aria-live="polite"></div>
+    </section>
+    <div class="foot">A frequency that belongs to us. ♡<br>Made with love, not distance.</div>
+  </main>
+  <audio id="audio" preload="none"></audio>
+  <script>
+    const stations = [
+      {name:'Miss Me FM',frequency:'101.1 FM',description:'For the moments when 9447 km feel farther than it is',songs:[{title:'Hey There Delilah',file:'miss-me-1.mp3',message:'Don\'t worry about the distance baby'},{title:'Hold On',file:'miss-me-2.mp3',message:'There isnt a life for me, without you in it'},{title:'If the World was Ending',file:'miss-me-3.mp3',message:'Even when things go wrong, Ill stay'}]},
+      {name:'Sleepy FM',frequency:'102.2 FM',description:'A soft corner for you to rest',songs:[{title:'Sailor Song',file:'sleepy-1.mp3',message:'Close your eyes and listen, bebeee'}]},
+      {name:'Happy FM',frequency:'103.3 FM',description:'For the happy days where u feel good',songs:[{title:'Arz Kiya Hai',file:'happy-1.mp3',message:'Tu he meri jaan'},{title:'Let me Love you',file:'happy-2.mp3',message:'Let me love you, even when the world is against us'}]},
+      {name:'Us FM',frequency:'104.4 FM',description:'Tells our story, my love',songs:[{title:'Belong Together',file:'us-1.mp3',message:'We belong together mi amor'},{title:'If we have each other',file:'us-2.mp3',message:'We only need each other'},{title:'All of me',file:'us-3.mp3',message:'I love every part of you'}]},
+      {name:'Future FM',frequency:'105.5 FM',description:'Two months down, a lifetime to go',songs:[{title:'Perfect',file:'future-1.mp3',message:'You are truly perfect in my eyes'},{title:'Rewrite the Stars',file:'future-2.mp3',message:'Iweight would do anything for you'},{title:'Until I Found You',file:'future-3.mp3',message:'You are the love of my life'}]},
+      {name:'Special FM',frequency:'143.2 FM',description:'A special message, just for you',songs:[{title:'A message from me',file:'secret-message.mp3',message:'Happy two months, my love.'}]}
+    ];
+
+    const $ = id => document.getElementById(id), audio = $('audio');
+    let stationIndex = 0, trackIndex = 0, playToken = 0;
+    const presets = $('presets');
+    const fmt = n => Number.isFinite(n) ? `${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}` : '0:00';
+
+    stations.forEach((s, i) => {
+      const b = document.createElement('button');
+      b.className = 'preset';
+      b.innerHTML = `<span>${s.frequency}</span>${s.name}`;
+      b.onclick = () => selectStation(i);
+      presets.appendChild(b);
+    });
+
+    function sync() {
+      const s = stations[stationIndex], t = s.songs[trackIndex];
+      $('frequency').textContent = s.frequency;
+      $('station').textContent = s.name;
+      $('description').textContent = s.description;
+      $('track').textContent = t.title;
+      $('dedication').textContent = t.message;
+      [...presets.children].forEach((b, i) => {
+        b.classList.toggle('active', i === stationIndex);
+        b.setAttribute('aria-pressed', String(i === stationIndex));
+      });
+      $('seek').value = 0;
+      $('elapsed').textContent = '0:00';
+      $('duration').textContent = '0:00';
+      $('status').textContent = '';
+      ++playToken;
+      audio.pause();
+      audio.src = t.file;
+      audio.load();
+      setPlaying(false);
+    }
+
+    function setPlaying(v) {
+      $('radio').classList.toggle('playing', v);
+      $('play').textContent = v ? 'Ⅱ' : '▶';
+      $('play').setAttribute('aria-label', v ? 'Pause' : 'Play');
+    }
+
+    async function play() {
+      const token = playToken;
+      try {
+        await audio.play();
+        if (token === playToken) $('status').textContent = '';
+      } catch (e) {
+        if (token === playToken) {
+          setPlaying(false);
+          $('status').textContent = 'Could not play. Check filename or use local server.';
+        }
+      }
+    }
+
+    function selectStation(i) {
+      stationIndex = i;
+      trackIndex = 0;
+      sync();
+      play();
+    }
+
+    function changeTrack(n) {
+      trackIndex = (trackIndex + n + stations[stationIndex].songs.length) % stations[stationIndex].songs.length;
+      sync();
+      play();
+    }
+
+    $('play').onclick = () => audio.paused ? play() : audio.pause();
+    $('prev').onclick = () => { if (audio.currentTime > 3) { audio.currentTime = 0; } else { changeTrack(-1); } };
+    $('next').onclick = () => changeTrack(1);
+
+    audio.onplay = () => setPlaying(true);
+    audio.onpause = () => setPlaying(false);
+    audio.onended = () => {
+      if (stations[stationIndex].songs.length > 1) changeTrack(1);
+      else { audio.currentTime = 0; setPlaying(false); }
+    };
+    audio.onerror = () => {
+      if (audio.getAttribute('src')) $('status').textContent = 'Audio file not found in directory.';
+    };
+    audio.ontimeupdate = () => {
+      if (Number.isFinite(audio.duration) && audio.duration > 0) {
+        $('seek').value = Math.round(audio.currentTime / audio.duration * 1000);
+        $('elapsed').textContent = fmt(audio.currentTime);
+        $('duration').textContent = fmt(audio.duration);
+      }
+    };
+    audio.onloadedmetadata = () => { $('duration').textContent = fmt(audio.duration); };
+    $('seek').oninput = e => {
+      if (Number.isFinite(audio.duration) && audio.duration > 0)
+        audio.currentTime = e.target.value / 1000 * audio.duration;
+    };
+
+    sync();
+  </script>
+</body>
+</html>
